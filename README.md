@@ -94,6 +94,9 @@ QOCAST ships with FFmpeg (LGPL 2.1, with the Fraunhofer FDK AAC encoder),
 TSDuck, the Varela Round font and the HB9IIU QOCAST OpenTuner (based on
 OpenTuner by Tom ZR6TG, GPLv3). Their licences are in the `licenses` folder.
 
+Source code of the HB9IIU QOCAST OpenTuner:
+**[github.com/HB9IIU/QOCAST-OpenTuner](https://github.com/HB9IIU/QOCAST-OpenTuner)**
+
 ## Credits
 
 - **Evariste F5OEO** for the PlutoDVB2 firmware

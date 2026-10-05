@@ -1,0 +1,11 @@
+HB9IIU QOCAST OpenTuner (the "OpenTuner" folder of this package)
+
+A modified version of Open Tuner by Tom ZR6TG and contributors
+(https://github.com/tomvdb/open_tuner), licensed under the GNU General Public
+License version 3 (see OpenTuner-GPLv3.txt).
+
+Complete source code of this modified version:
+    https://github.com/HB9IIU/QOCAST-OpenTuner
+
+QOCAST itself is a separate program; it talks to OpenTuner over local network
+interfaces only.
