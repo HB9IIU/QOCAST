@@ -9,7 +9,7 @@ PicoTuner - all from one page in your browser.
 ## Download
 
 Get the latest `QOCast-Portable-x64.zip` from the **[Releases](../../releases)** page.
-No installation: unzip it to a writable folder and run `START-QOCAST.cmd`.
+No installation: unzip it to a writable folder and run `CLICK-HERE-TO-START.cmd`.
 
 ## Features
 
@@ -36,7 +36,7 @@ No installation: unzip it to a writable folder and run `START-QOCAST.cmd`.
 
 ## Starting and quitting
 
-1. Run `START-QOCAST.cmd` (or `QOCast.exe`). The page opens in your browser at
+1. Run `CLICK-HERE-TO-START.cmd` (or `QOCast.exe`). The page opens in your browser at
    http://localhost:8080. OpenTuner starts minimized and connects your tuner by
    itself.
 2. Set your callsign and locator on the **Setup** page.
