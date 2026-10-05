@@ -1,0 +1,17 @@
+FFmpeg (tools\ffmpeg\bin: ffmpeg.exe, ffprobe.exe)
+
+QOCAST ships an unmodified FFmpeg build, licensed under the GNU Lesser General
+Public License version 2.1 or later (see FFmpeg-LGPL-2.1.txt). It was built
+without --enable-gpl and without --enable-nonfree.
+
+Version: N-127094-gf68e1afc1 (git commit f68e1afc1)
+Built with GCC 16.2.0 (MSYS2), with NVIDIA NVENC/NVDEC, Fraunhofer FDK AAC,
+SRT, DirectShow and FreeType.
+
+Source code: https://git.ffmpeg.org/ffmpeg.git (commit f68e1afc1)
+             https://ffmpeg.org/download.html
+
+The AAC encoder is the Fraunhofer FDK AAC library, under its own licence
+(see FDK-AAC-NOTICE.txt). https://github.com/mstorsjo/fdk-aac
+
+FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.

@@ -46,9 +46,9 @@ Other devices on your network can use `http://<this-PC-address>:8080`.
 
 ## Included third-party software
 
-QOCAST ships with FFmpeg, TSDuck, the Varela Round font and the HB9IIU QOCAST
-OpenTuner (based on OpenTuner by Tom ZR6TG, GPLv3). Their licences are in the
-`licenses` folder.
+QOCAST ships with FFmpeg (LGPL 2.1, with the Fraunhofer FDK AAC encoder),
+TSDuck, the Varela Round font and the HB9IIU QOCAST OpenTuner (based on
+OpenTuner by Tom ZR6TG, GPLv3). Their licences are in the `licenses` folder.
 
 ## Credits
 
