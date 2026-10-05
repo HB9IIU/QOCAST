@@ -6,6 +6,47 @@ QOCAST sends DVB-S2 video to the QO-100 satellite with an ADALM-Pluto
 (PlutoDVB2 firmware by F5OEO), and shows what comes back with a MiniTiouner or
 PicoTuner - all from one page in your browser.
 
+![QOCAST main page](images/screenshot.png)
+
+## What makes QOCAST different
+
+Like other DATV tools, QOCAST starts from a table of encoder settings for each
+symbol rate and FEC (picture size, bitrates, audio). But a fixed table only fits
+"average" pictures: a detailed film or a busy camera scene can need more than
+the profile carries, and the stream overflows - viewers see glitches.
+
+So QOCAST **tests what you actually send**, and adapts the settings to it:
+
+- **Films:** at the first Start with a profile, QOCAST finds the three hardest
+  30-second parts of the film, encodes them with the exact transmit command, and
+  steps down only as far as needed (NVENC multipass, then a smaller picture, then
+  fewer frames per second) until the stream has no overflows and keeps spare room.
+  If there is room left over, the video gets more bitrate. The result is saved
+  next to the film: the next Start is immediate.
+- **Camera, Moblin and OBS:** a 20-second test, per profile, with your own scene
+  (your room, your light, your phone in your hand), then the same check.
+- **Testcards:** the moving ones (SBB clock, station card with marquee) are
+  shipped with settings already tested for every profile.
+- **On air:** QOCAST keeps watching. If a film still overflows, it is checked
+  again, more carefully, at its next Start; for live sources the page says so.
+
+Also built in:
+
+- **Signal health at a glance:** one line tells you if your stream is good, too
+  full or has errors, with a live bitrate bar (video, audio, overhead, spare) and
+  TR 101 290 checks behind it.
+- **See yourself come back:** while on air, QOCAST tunes its own OpenTuner to
+  your downlink and shows your picture received back through QO-100, with MER
+  and D margin.
+- **Start, then PTT:** the stream starts muted; the Pluto only transmits when
+  you press PTT.
+- **Moblin and OBS stay connected:** connect them once; start and stop the
+  transmission as often as you like without touching the phone or OBS.
+- **Use it from any device:** open `http://qocast.local:8080` on a tablet,
+  phone or another PC on your home network.
+- **Nothing to install or configure:** unzip and start. OpenTuner starts with
+  QOCAST, finds your MiniTiouner or PicoTuner by itself and closes at Quit.
+
 ## Download
 
 Get the latest `QOCast-Portable-x64.zip` from the **[Releases](../../releases)** page.
@@ -24,7 +65,8 @@ No installation: unzip it to a writable folder and run `CLICK-HERE-TO-START.cmd`
 - **On-air monitor:** your own picture received back through QO-100
 - **RX page:** watch QO-100 in the browser, click a signal to tune
 - **Overlays** on camera and Moblin: callsign, locator, UTC time, scrolling text
-- **Stream analysis:** live TR 101 290 checks and bitrate breakdown
+- **Signal health:** status in words, live bitrate bar, TR 101 290 checks
+- **Help page:** step-by-step setup of Moblin and OBS
 
 ## Requirements
 
@@ -42,7 +84,9 @@ No installation: unzip it to a writable folder and run `CLICK-HERE-TO-START.cmd`
 2. Set your callsign and locator on the **Setup** page.
 3. To end: the **Quit** button at the top of the page.
 
-Other devices on your network can use `http://<this-PC-address>:8080`.
+Other devices on your network can use `http://qocast.local:8080` (or
+`http://<this-PC-address>:8080`). There is no password: anyone on your home
+network can open it.
 
 ## Included third-party software
 
