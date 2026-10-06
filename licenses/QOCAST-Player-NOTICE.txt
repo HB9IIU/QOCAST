@@ -1,0 +1,15 @@
+QOCAST Player (the "Player" folder of this package)
+
+Shows the picture received by a MiniTiouner or PicoTuner in one window.
+It contains code from Open Tuner by Tom ZR6TG and contributors
+(https://github.com/tomvdb/open_tuner), so it is licensed under the GNU General
+Public License version 3, like Open Tuner (see OpenTuner-GPLv3.txt).
+
+Complete source code:
+    https://github.com/HB9IIU/QOCAST-OpenTuner
+
+It uses LibVLC and LibVLCSharp by VideoLAN (GNU LGPL 2.1, https://www.videolan.org),
+LibUsbDotNet (GNU LGPL 3) and the FTDI D2XX driver (FTDI's driver licence).
+
+QOCAST itself is a separate program; it talks to the Player over local network
+interfaces only.
