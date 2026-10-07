@@ -9,6 +9,17 @@ picture plays in its own small window, the **QOCAST Player**.
 
 ![QOCAST main page](images/screenshot.png)
 
+## What's new in 0.3.2
+
+- **Pluto frequency correction:** after each transmission via QO-100, QOCAST
+  compares your signal with the beacon and corrects your Pluto's frequency, so
+  it transmits right on your slot (a Pluto is often 10-50 kHz off at 2.4 GHz).
+- **The LNB is followed automatically** on the beacon; every correction is
+  announced on the page.
+- **Your own signal is found by itself** after PTT, no more clicking.
+- The received station on two lines next to "Configure signal" (with the
+  provider name), and a tidier header.
+
 ## What's new in 0.3
 
 - **LNB calibration:** the Setup page shows your LNB's real oscillator
