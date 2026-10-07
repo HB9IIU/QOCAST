@@ -9,6 +9,26 @@ picture plays in its own small window, the **QOCAST Player**.
 
 ![QOCAST main page](images/screenshot.png)
 
+## What's new in 0.3
+
+- **LNB calibration:** the Setup page shows your LNB's real oscillator
+  frequency. **Recalibrate** locks on the QO-100 beacon five times and corrects
+  it, in about 30 seconds.
+- **Local mode:** try the whole chain without the satellite. The receiver
+  listens to your Pluto directly on 2.4 GHz (small antenna on the tuner, LNB
+  power off), and the spectrum shows your signal simulated at your slot, as
+  high as your TX power.
+- **Sound meter** on the camera picture: one small bar showing the sound as it
+  is sent.
+- **Sound offset** for the camera (Setup): if your sound comes after the
+  picture, enter how much, and it is corrected for every viewer.
+- **Signal health warns** when the picture falls behind (a growing delay) or
+  the stream has no sound.
+- **More reliable reception of your own signal** when you press PTT.
+- **tx_log.csv:** one line per transmission with your own signal as received
+  (frequency error, MER, Pluto temperature), to see whether your Pluto's
+  frequency error is reproducible.
+
 ## What's new in 0.2: no more video in the browser
 
 In 0.1, received video was shown inside the web page: OpenTuner received the
@@ -99,6 +119,8 @@ No installation: unzip it to a writable folder and run `CLICK-HERE-TO-START.cmd`
 - **Start, then PTT:** the stream runs muted until you press PTT
 - **TX monitor:** live preview of what you send, and your signal received back
 - **Local Pluto RX spectrum:** see your own carrier
+- **LNB calibration** on the QO-100 beacon, and a **Local mode** to test
+  without the satellite
 - **Overlays** on camera and Moblin: callsign, locator, UTC time, scrolling text
 - **Signal health:** status in words, live bitrate bar, TR 101 290 checks
 - **BATC wideband chat** built in
