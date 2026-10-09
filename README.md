@@ -9,6 +9,20 @@ picture plays in its own small window, the **QOCAST Player**.
 
 ![QOCAST main page](images/screenshot.png)
 
+## What's new in 0.4
+
+- **Sound sync for cameras:** many webcams deliver the sound a few hundred
+  milliseconds after the picture. Press **Sound sync**, clap a few times in
+  front of the camera, and QOCAST measures the delay and corrects it on air.
+  One value per camera, also editable on the Setup page.
+- **QOCAST Player, new look:** no title bar (drag the picture to move it), and a
+  bottom bar with volume, mute, a VU meter and the received station's callsign.
+- **Pluto over Ethernet:** the Help page explains how to give the Pluto a fixed
+  address on your home network.
+- Clearer camera test (the countdown starts only when the camera really
+  records), a tidier Setup page, and fixes for webcams without MJPEG such as
+  the Microsoft LifeCam Studio.
+
 ## What's new in 0.3.2
 
 - **Pluto frequency correction:** after each transmission via QO-100, QOCAST
@@ -133,15 +147,18 @@ No installation: unzip it to a writable folder and run `CLICK-HERE-TO-START.cmd`
 - **LNB calibration** on the QO-100 beacon, and a **Local mode** to test
   without the satellite
 - **Overlays** on camera and Moblin: callsign, locator, UTC time, scrolling text
+- **Sound sync:** camera sound and picture in step, measured by clapping
 - **Signal health:** status in words, live bitrate bar, TR 101 290 checks
 - **BATC wideband chat** built in
-- **Help page:** step-by-step setup of Moblin and OBS, receiving a station
+- **Help page:** step-by-step setup of Moblin and OBS, receiving a station,
+  Pluto on your network
 
 ## Requirements
 
 - Windows 10 or 11, 64-bit
 - An **NVIDIA graphics card** (the video is encoded with NVENC, H.265)
 - **ADALM-Pluto** with the **PlutoDVB2 firmware** (F5OEO), connected by USB
+  or Ethernet
 - Optional, for receiving: a **MiniTiouner** or **PicoTuner** with its USB
   driver installed in Windows, and an LNB for the QO-100 downlink
 
