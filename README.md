@@ -158,7 +158,8 @@ No installation: unzip it to a writable folder and run `CLICK-HERE-TO-START.cmd`
 - Windows 10 or 11, 64-bit
 - An **NVIDIA graphics card** (the video is encoded with NVENC, H.265)
 - **ADALM-Pluto** with the **PlutoDVB2 firmware** (F5OEO), connected by USB
-  or Ethernet
+  or Ethernet. Firmware download:
+  [github.com/F5OEO/plutosdr-fw/releases](https://github.com/F5OEO/plutosdr-fw/releases)
 - Optional, for receiving: a **MiniTiouner** or **PicoTuner** with its USB
   driver installed in Windows, and an LNB for the QO-100 downlink
 
