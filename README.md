@@ -9,6 +9,33 @@ picture plays in its own small window, the **QOCAST Player**.
 
 ![QOCAST main page](images/screenshot.png)
 
+## What's new in 0.6.0
+
+- **OBS browser overlays:** add a transparent SBB-style clock in local time or
+  UTC, and a live weather bar for the station locator.
+- **Custom LNBs:** enter the nominal LNB LO frequency in Setup (9750.000 MHz by
+  default), then use beacon calibration for the exact effective offset.
+- **Camera diagnostics:** Start now shows each camera-launch stage, saves a
+  detailed support log, times out if the preview cannot release the camera,
+  and exports everything from the new Diagnostics button.
+- **Fixed:** QOCast.exe has the QOCAST icon again instead of the Python icon.
+
+## What's new in 0.5
+
+- **Practise at home – Local mode, explained:** train in your shack without the
+  satellite, with exactly the same experience. A new Help topic has two sketches
+  (normal and local mode), also in Setup under "How to set it up".
+- **New version notice:** at start, QOCAST checks GitHub once. If a newer version
+  is out, a popup shows "What's new" with Later and Download buttons.
+- **Top banner with weather:** for Camera and Moblin, choose None, Classic or With
+  weather. It shows the current weather at your locator and the nearest town.
+- **Station card sound meters:** two segmented meters move with the melody, with
+  peak hold.
+- **QRZ.com link:** the received station's callsign links to its QRZ.com page.
+- **Improved Setup and chat**, clearer NVIDIA and Pluto warnings, and simpler
+  startup by double-clicking QOCast.exe.
+- **Fixed:** the QOCAST Player's VU-meter segments have equal widths again.
+
 ## What's new in 0.4
 
 - **Sound sync for cameras:** many webcams deliver the sound a few hundred
