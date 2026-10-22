@@ -9,6 +9,14 @@ picture plays in its own small window, the **QOCAST Player**.
 
 ![QOCAST main page](images/screenshot.png)
 
+## What's new in 0.8.0
+
+- **Satellite | Local switch in the top bar:** one click to change the mode (not while on air), with a reminder of what to do with the antenna and the LNB cable. It is no longer in Setup.
+- **QOCAST Player:** the bottom bar now shows the signal after the callsign: symbol rate, MER, margin and FEC. It uses a fixed-width font, so the values don't shake when they change.
+- **Power ranges window (replaces Calibrate power):** a button next to the TX power slider opens one window with a row per symbol rate (125, 250, 333, 500, 1000 kS/s). Two handles set 0% and 100% of the slider for each rate, with Reset per row and one Save. A rate you have not set uses the full range (-60 to 0 dB).
+- **New symbol rate 125 kS/s:** for very narrow signals (640x360 picture, about 50 to 110 kb/s of video, depending on the FEC).
+- **Magic Eye:** a green phosphor "cat eye" in the card of your own signal shows at a glance how well it comes back: almost closed at 0 dB of margin, fully open at 5 dB or more, dark without a lock. It replaces the thin quality bar. Inspired by the [Lynx DATV Receiver by G8YTZ](https://github.com/G8YTZ/lynx-datv-receiver).
+
 ## What's new in 0.7.0
 
 - **Compatible with Tezuka firmware.**
