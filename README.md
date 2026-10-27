@@ -9,6 +9,16 @@ picture plays in its own small window, the **QOCAST Player**.
 
 ![QOCAST main page](images/screenshot.png)
 
+## What's new in 0.10.0
+
+- **OpenTuner is left alone:** QOCAST no longer closes a running OpenTuner when it starts.
+- **PicoTuner (USB) now works:** tested with a real PicoTuner. Thank you Jochem PE0JHM for testing it!
+- **RF input and LNB voltage (Setup → Receiver):** choose input A or B and LNB voltage Off / 13 V / 18 V. The receiver starts on input A with the voltage Off.
+- **After a transmission the receiver goes back to the station you were listening to** (it used to stay on the beacon). PE0JHM request.
+- **The "No NVIDIA encoder: software encoding" message is shown once**, not every time the page is opened.
+- **OpenTuner running:** when the Player finds no tuner and OpenTuner is running, its window says so ("please close OpenTuner").
+- **All your own files are in one folder, `data`:** settings, camera tests, the Player settings (`data\player`), your films (`data\videos`), pictures (`data\pictures`) and music (`data\music`). To update: unzip the new version and copy the old `data` folder over. Files from the older layout are moved into `data` by themselves at the first start.
+
 ## What's new in 0.8.0
 
 - **Satellite | Local switch in the top bar:** one click to change the mode (not while on air), with a reminder of what to do with the antenna and the LNB cable. It is no longer in Setup.
@@ -189,6 +199,8 @@ Also built in:
 
 Get the latest `QOCast-Portable-x64.zip` from the **[Releases](../../releases)** page.
 No installation: unzip it to a writable folder and run `QOCast.exe`.
+To update: unzip the new version, then copy the `data` folder of the old version into the new one
+(it holds your settings, films, pictures and music).
 
 ## Features
 
