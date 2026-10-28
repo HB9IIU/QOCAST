@@ -232,8 +232,13 @@ To update: unzip the new version, then copy the `data` folder of the old version
 - **ADALM-Pluto** with the **PlutoDVB2 firmware** (F5OEO), connected by USB
   or Ethernet. Firmware download:
   [github.com/F5OEO/plutosdr-fw/releases](https://github.com/F5OEO/plutosdr-fw/releases)
-  Also works with a **Tezuka** firmware that has the DATV modulator (boards with
-  the Zynq 7020 chip, such as the FISHBall 7020).
+  Also works with the **Tezuka** firmware
+  ([github.com/F5OEO/tezuka_fw](https://github.com/F5OEO/tezuka_fw)) that has the DATV modulator
+  (boards with the Zynq 7020 chip, such as the FISHBall 7020).
+  **Supported firmware: only the official ones from the two addresses above.** Custom builds,
+  for example numbered 0303, 2402 or 0201, have been reported to behave strangely (a PTT that
+  stays muted, MQTT errors). QOCAST cannot guarantee that they work, and we will not adapt
+  QOCAST to them.
 - Optional, for receiving: a **MiniTiouner** or **PicoTuner** with its USB
   driver installed in Windows, and an LNB for the QO-100 downlink
 
