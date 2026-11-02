@@ -2,6 +2,8 @@
 
 **Browser-controlled QO-100 DATV transmit and receive console for Windows**, by HB9IIU.
 
+# Tested with NVIDIA graphics. Other PCs: best effort.
+
 QOCAST sends DVB-S2 video to the QO-100 satellite with an ADALM-Pluto
 (PlutoDVB2 firmware by F5OEO), and shows what comes back with a MiniTiouner or
 PicoTuner. You control everything from one page in your browser; the received
