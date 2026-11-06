@@ -13,16 +13,14 @@ page in your browser, the received pictures included.
 
 ![QOCAST main page](images/screenshot.png)
 
-## What's new in 0.14.0
+## What's new in 0.14.1
 
-- The receivers (one or two) are now part of the QOCAST page. There is no separate Player window any more, and nothing to start or set up.
-- If no tuner is found, the receiver says so in red in the picture, and the "No tuner found" popup is gone.
-- QOCAST finds your tuners by itself when it starts and gives them to receiver 1 and receiver 2: MiniTiouners first, then a PicoTuner (two channels), then an RTL-SDR.
-- QSO mode: press 1 | 2 to see two receivers side by side. The two-people button shows both pictures large, each with its own volume control above the picture.
-- Calibrate: a button in each receiver's settings (the **i** button) measures the beacon and corrects the frequency error of your LNB and tuner by itself, in about a minute. The LNB settings (voltage, input, LO) and Recalibrate were removed from Setup: they are now in each receiver's **i** button. "Follow the LNB automatically" is gone.
-- The PTT relay of a Pluto+ could stay off when you raised the TX power from 0%. QOCAST now sends only the "transmit" command and no longer re-sends all its settings first.
-- A CPU load bar next to Go live shows how busy your PC's processor is, from green to red.
-- Thank you to **Jochem PE0JHM** and **Peter PF2A** for their testing and their valuable feedback.
+- A receiver's picture can be sent to another program. The **UDP** button in the receiver's **i** settings copies its address: `udp://@:5011` for receiver 1 and `udp://@:5012` for receiver 2. In VLC, open it as a network stream. In OBS, use a **VLC Video Source**.
+- Chat: a **Report** button with the callsign (for example *Report DB6TH*) puts a signal report of that receiver into the message box, like Open Tuner: station, margin, MER, symbol rate and frequency. You check it and press Send. In Setup, an optional **Dish size** (cm) is added to the report.
+- **Transverter offset** in Setup (Transmitter): for a converter between your SDR and the antenna. The SDR transmits on the displayed frequency minus this value. With an up-converter, enter a positive number, for example 2000. At 0 nothing changes.
+- **Find** in Setup now searches again even when a Pluto is connected, and lists every transmitter it finds. The one in use is marked, and you can switch to another one.
+- **OBS Virtual Camera** with a microphone now works. The sound sync test and the transmission no longer stall with a virtual camera.
+- The Pluto frequency correction no longer learns by itself after a transmission (the "Learn automatically" switch is gone). The value you have stays in use, and **Reset** in Setup clears it.
 
 Older versions: see the **[Releases](../../releases)** page.
 

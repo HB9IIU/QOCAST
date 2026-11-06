@@ -1,0 +1,14 @@
+geo/towns.txt (the "near ..." town in the weather banner)
+==========================================================
+
+Source: GeoNames, https://www.geonames.org
+File:   cities15000 (all places with more than 15,000 inhabitants),
+        https://download.geonames.org/export/dump/cities15000.zip
+        downloaded 2026-10-09, reduced to name, latitude, longitude, country,
+        without city districts and historical places (feature codes PPLX,
+        PPLH, PPLQ, PPLW, PPLR).
+
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+         https://creativecommons.org/licenses/by/4.0/
+Changes: only the selection above (columns and place types); the data itself
+is used as published.
