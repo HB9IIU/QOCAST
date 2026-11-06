@@ -2,7 +2,9 @@
 
 **Browser-controlled QO-100 DATV transmit and receive console for Windows**, by HB9IIU.
 
-# Tested with NVIDIA graphics. Other PCs: best effort.
+# Developed and tested on a PC with an NVIDIA graphics card
+
+Other PCs (Intel or AMD graphics, or the processor alone) are supported too, with less testing.
 
 QOCAST sends DVB-S2 video to the QO-100 satellite with an ADALM-Pluto
 (PlutoDVB2 firmware by F5OEO), and shows what comes back with one or two
