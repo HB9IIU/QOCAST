@@ -1,0 +1,17 @@
+PROGRAMS IN THIS PACKAGE AND WHERE THEIR SOURCE CODE IS
+
+tuner-service (MiniTiouner / PicoTuner)
+    From the QOCAST Player, whose tuner code comes from Open Tuner by Tom ZR6TG and contributors.
+    GNU GPL v3. Source: https://github.com/HB9IIU/QOCAST-OpenTuner
+
+datvrx and rtl_iq (RTL-SDR receiver)
+    From DATVision by HB9IIU, which is built on OnAir. GNU GPL v3.
+    Source: https://github.com/HB9IIU/DATVision  and  https://github.com/adswill/OnAir
+
+FFmpeg
+    A build by www.gyan.dev (see FFmpeg-build.txt). GNU GPL v3. Source: https://github.com/FFmpeg/FFmpeg
+
+libusb
+    LGPL 2.1. https://libusb.info
+
+The licence texts are in this folder.
