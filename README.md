@@ -124,17 +124,24 @@ network can open it.
 
 ## Antivirus warning
 
-Your antivirus (for example Norton) may move a QOCAST file to quarantine. This is a false alarm.
-QOCAST is a free hobby program and it is not "signed" (signing costs money), so some antivirus
-programs do not trust it.
+Some antivirus programs (such as Norton or Microsoft Defender) may incorrectly flag or quarantine QOCAST files.
 
-If it happens:
+QOCAST is a free, open-source amateur radio project. Since the application is not digitally signed and is not widely distributed, some security programs may consider it suspicious.
 
-1. Open your antivirus and **restore** the file from the quarantine.
-2. Add the **QOCAST folder** to the antivirus exclusions.
-3. Start QOCAST again.
+**This is a known issue with small, independent software projects, not necessarily an indication of malware.**
 
-Optional: tell your antivirus company that it is a false alarm.
+Don't just take my word for it! Microsoft explains the issue in its official documentation:
+
+- [Why Windows may distrust unsigned applications (Microsoft)](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions)
+- [How to report false antivirus detections (Microsoft)](https://learn.microsoft.com/en-us/defender-xdr/submission-guide)
+
+**If your antivirus quarantines a QOCAST file:**
+
+1. Make sure you downloaded QOCAST from the official GitHub project.
+2. Check the detection and verify that it is a false positive before restoring the file.
+3. Restart QOCAST.
+
+You can also report a suspected false positive to your antivirus provider to help prevent future warnings.
 
 ## Included third-party software
 
