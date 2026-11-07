@@ -122,6 +122,27 @@ Other devices on your network can use `http://qocast.local:6969` (or
 `http://<this-PC-address>:6969`). There is no password: anyone on your home
 network can open it.
 
+## Antivirus warning (Norton, Defender and others)
+
+Some antivirus programs may quarantine a file of QOCAST or warn about it, with a name such as
+"IDP.Generic" or "Behavioral Protection". This is a **false positive**.
+
+**Why it happens.** QOCAST is a free hobby project and its programs are not signed with a paid
+code-signing certificate. An unsigned program that is new, that few people have used, and that talks
+to USB devices and the network (a tuner, a Pluto, FFmpeg) is flagged by many antivirus programs
+by its behaviour alone, without having found anything.
+
+**What you can do.**
+
+1. Restore the file from the antivirus quarantine (in Norton: *Security history*, *Quarantine*, *Restore*).
+2. Add the QOCAST folder to the antivirus exclusions, then start QOCAST again.
+3. If you like, report the file to your antivirus company as a false positive. This helps the next person.
+
+**What you can check yourself.** Download QOCAST only from the Releases page of this repository.
+The source of the tuner service is public in
+[QOCAST-OpenTuner](https://github.com/HB9IIU/QOCAST-OpenTuner), and the included third-party
+programs are listed below.
+
 ## Included third-party software
 
 The licences are in the `licenses` folder.
