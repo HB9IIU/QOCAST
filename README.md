@@ -13,14 +13,16 @@ page in your browser, the received pictures included.
 
 ![QOCAST main page](images/screenshot.png)
 
-## What's new in 0.14.1
+## What's new in 0.15.0
 
-- A receiver's picture can be sent to another program. The **UDP** button in the receiver's **i** settings copies its address: `udp://@:5011` for receiver 1 and `udp://@:5012` for receiver 2. In VLC, open it as a network stream. In OBS, use a **VLC Video Source**.
-- Chat: a **Report** button with the callsign (for example *Report DB6TH*) puts a signal report of that receiver into the message box, like Open Tuner: station, margin, MER, symbol rate and frequency. You check it and press Send. In Setup, an optional **Dish size** (cm) is added to the report.
-- **Transverter offset** in Setup (Transmitter): for a converter between your SDR and the antenna. The SDR transmits on the displayed frequency minus this value. With an up-converter, enter a positive number, for example 2000. At 0 nothing changes.
-- **Find** in Setup now searches again even when a Pluto is connected, and lists every transmitter it finds. The one in use is marked, and you can switch to another one.
-- **OBS Virtual Camera** with a microphone now works. The sound sync test and the transmission no longer stall with a virtual camera.
-- The Pluto frequency correction no longer learns by itself after a transmission (the "Learn automatically" switch is gone). The value you have stays in use, and **Reset** in Setup clears it.
+- **Local mode** works with the new receivers: the Pluto transmits where your receiver listens (the offset is set by itself), so a MiniTiouner, a PicoTuner or an RTL-SDR dongle hears it. A click on the simulated signal tunes the receiver.
+- **Recording:** each receiver can record what it receives (the **i** button, **Rec**). One folder per callsign, the file name is the date and time. A red blinking **Rec.** shows while recording.
+- **Your TX slot is checked** against the real spectrum. A warning appears when another signal is inside the band your symbol rate needs, also when it becomes busy after you chose the slot. Start refuses until you choose another slot or a lower symbol rate.
+- **CPU load bar:** it shows how much of the load is QOCAST (with its FFmpeg and receivers), OBS and others.
+- **Two tuners:** QSO mode opens by itself at the start, and the second receiver tunes the beacon. A receiver that decodes nothing for 60 seconds goes back to the beacon by itself.
+- A MiniTiouner that another program is using (for example the MiniTiouner program) is skipped: the receivers use the next tuner, for example a PicoTuner.
+- **Video file:** a trash button deletes the selected film (after asking).
+- **Setup, Interface:** the message box under the Start stream button can be shown or hidden (hidden by default).
 
 Older versions: see the **[Releases](../../releases)** page.
 
